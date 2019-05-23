@@ -168,9 +168,11 @@ function myFunction() {
 <h1>期中報告</h1>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/0DXr7CF7LeM" width="560"></iframe></p>
 <h1>ROC Flag</h1>
+<p></p>
 <!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
+<p></p>
 <p></p>
 <!-- 啟動 Brython -->
 <script>
@@ -180,8 +182,8 @@ brython({debug:1, pythonpath:['./../data/py']});
 }
 </script>
 <p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<p></p>
 <script type="text/python">
-# 導入 doc
 # 導入 doc
 from browser import document as doc
 import math
@@ -235,9 +237,12 @@ ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
 <p><canvas height="400" id="plotarea2" width="600"></canvas></p>
+<p></p>
 <script type="text/python">
+# 導入 doc
 from browser import document as doc
 import math
+
 # 準備繪圖畫布
 canvas = doc["plotarea2"]
 ctx = canvas.getContext("2d")
@@ -297,6 +302,7 @@ document.write(new Date().getFullYear());
 All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 </div>
 </div>
+<p></p>
 <!-- for footer -->
 <p></p>
 <!-- for site wrap -->
