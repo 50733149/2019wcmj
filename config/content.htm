@@ -1,10 +1,9 @@
 <h1>簡介</h1>
 <p><span>學習如何一次上傳多個圖檔, 並且學會如何引用, 並且設定圖片大小</span></p>
 <p><img alt="" height="143" src="/images/gocycle4.png" width="178"/></p>
-<p></p>
-<h2>game1</h2>
+<p></p><h1>骰子遊戲</h1>
 <p> </p>
-<script type="text/javascript">// <![CDATA[
+<script type="text/javascript">
 var cwidth = 400;
     var cheight = 300;
     var dicex = 50;
@@ -154,20 +153,157 @@ function draw2mid() {
     ctx.closePath();
     ctx.fill();
 }
-// ]]></script>
+</script>
 <p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas> <br/> <button onclick="throwdice();">Throw dice </button></p>
-<form id="f" name="f">Stage: <input name="stage" type="text" value="First Throw"/> Point: <input name="pv" type="text" value="   "/> Outcome: <input name="outcome" type="text" value="     "/></form>
-<h3>game2</h3>
-<p><button onclick="myFunction()">Try it</button></p>
-<p id="demo"></p>
-<script>// <![CDATA[
+<form id="f" name="f">Stage: <input name="stage" type="text" value="First Throw"/> Point: <input name="pv" type="text" value="   "/> Outcome: <input name="outcome" type="text" value="     "/></form><h1>猜數字</h1>
+<p><button onclick="myFunction()">Try it</button></p><h1>WEEK1</h1>
+<p><a href="http://50733149.github.io/2019wcmj" rel="nofollow"></a></p>
+<p><span>學習如何一次上傳多個圖檔, 並且學會如何引用, 並且設定圖片大小.</span></p>
+<p><span><img alt="" height="471" src="https://50733145.github.io/2019wcmj/images/gocycle4.png" width="587"/></span></p>
+<h1>WEEK2</h1>
+<p>網路與電腦程式只是工具, 任何人希望與遠端的系統或成員溝通, 可以使用網路.</p>
+<p>任何人想要利用電腦的能力解決問題, 就必須學會編寫電腦程式, 與電腦溝通.</p>
+<h1>WEEK3</h1>
+<p><span>根據 </span><a href="https://2019wcm.blogspot.com/2019/03/ungit.html">https://2019wcm.blogspot.com/2019/03/ungit.html</a><span> 的設定, 完成 ungit 配置.</span></p>
+<h1>網際簡報</h1>
+<p>CMSimfly 中採用<span> </span><a href="https://revealjs.com/#/">Reveal.js</a><span> </span>作為網際簡報, 其中的維護檔案位於 config/reveal.js, 而對應的簡報檔案則位於 reveal 目錄中.</p>
+<h1>網誌編輯</h1>
+<p>CMSimfly 採用<span> </span><a href="https://blog.getpelican.com/">Pelican blog</a><span> </span>系統, 編輯檔案位於 config/pelican.leo, 對應的</p>
+<p> Markdown 原始檔案位於 markdown 目錄中, 而經 Pelican 轉換出的網誌超文件檔案則位於 blog 目錄中.</p>
+<p>其餘在網誌文章中所需要的 Javascript 或 Brython 程式檔案, 則與 CMSimfly 及 Reveal.js 共用, 位於 static 目錄下.</p>
+<p>上傳檔案與圖檔的引用則與 CMSimfly 架構相同.</p>
+<p>第二位搶這裡也是不遺餘力</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/KZnCu1Sq1vo" width="560"></iframe></p>
+<p>就是這樣編輯的</p>
+<p>接下來修改這裡</p><h1>git http 與 ssh</h1>
+<p>利用 ssh 對 git 改版, 必須使用  home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_395823">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.53:3128 %h %p</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="js plain">Host github.com</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">User git</code></div>
+<div class="line number5 index4 alt2"><code class="js plain">Port 22</code></div>
+<div class="line number6 index5 alt1"><code class="js plain">Hostname github.com</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="js plain">IdentityFile </code><code class="js string">"y:\home\.ssh\id_rsa"</code></div>
+<div class="line number9 index8 alt2"> </div>
+<div class="line number10 index9 alt1"><code class="js plain">TCPKeepAlive yes</code></div>
+<div class="line number11 index10 alt2"><code class="js plain">IdentitiesOnly yes</code></div>
+<div class="line number12 index11 alt1"> </div>
+<div class="line number13 index12 alt2"><code class="js plain">Host ssh.github.com</code></div>
+<div class="line number14 index13 alt1"><code class="js plain">User git</code></div>
+<div class="line number15 index14 alt2"><code class="js plain">Port 443</code></div>
+<div class="line number16 index15 alt1"><code class="js plain">Hostname ssh.github.com</code></div>
+<div class="line number17 index16 alt2"> </div>
+<div class="line number18 index17 alt1"><code class="js plain">IdentityFile </code><code class="js string">"y:\home\.ssh\id_rsa"</code></div>
+<div class="line number19 index18 alt2"> </div>
+<div class="line number20 index19 alt1"><code class="js plain">TCPKeepAlive yes</code></div>
+<div class="line number21 index20 alt2"><code class="js plain">IdentitiesOnly yes</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h1>近端配置與管理</h1>
+<p><span>1.點擊右上角的三點線並進入設定(settings)</span></p>
+<p><img alt="" height="778" src="https://50733119.github.io/2019wcmj/images/000.png" width="480"/></p>
+<p><span>2.滾到最下面點開(Advanced)</span></p>
+<p><img alt="" height="242" src="https://50733119.github.io/2019wcmj/images/002.png" width="480"/></p>
+<p><span>3.找到Syetm點開Open proxy settings</span></p>
+<p><img alt="" height="131" src="https://50733119.github.io/2019wcmj/images/chrome_sqLG90xWu6.png" width="480"/></p>
+<p><span>4.點開LAN設定</span></p>
+<p><img alt="" height="127" src="https://50733119.github.io/2019wcmj/images/9449.png" width="480"/></p>
+<p><span>5.輸入你要的網路位址就能連上網路了</span></p>
+<p><span color="#FF0000">可以使用140.130.17.3</span></p>
+<p><img alt="" height="155" src="https://50733119.github.io/2019wcmj/images/rundll32_iwQ9GfstpX.png" width="480"/></p>
+<p>
+<script>
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*10+1);
 }
-// ]]></script>
-<h1>期中報告</h1>
+</script>
+</p><h1>期中報告</h1>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/0DXr7CF7LeM" width="560"></iframe></p>
-<h1>ROC Flag</h1>
+<h1>網路連線設定</h1>
+<p><span>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.</span><br/><br/><span>正常情況下, 電腦輔助設計室中的 64 台電腦透過 IPv4 協定下的 DHCP 與 NAT 上網, 各電腦以 DHCP client 取得 192.168.1.* 的網路位址, 然後以 NAT 的一組外部 IP 上網, 通常必須設定 Proxy Server 為 http://proxy.kmol.info:3128 後上網會比較順暢, 但若 8 台 Proxy Servers 無法正常運作時, 則取消 Proxy Server 的設定.</span><br/><br/><span>瀏覽器代理主機設定</span><br/><br/><span>了解如何設定 Google Chrome 與 Firefox 瀏覽器的代理主機設定.</span><br/><br/><span>申請 Github 帳號</span><br/><br/><span>利用 Gmail 帳號申請 Github 帳號, 申請後利用電子郵箱收信進行確認後, 就可以在 Github 上建立倉儲.</span></p>
+<p><span></span></p><h1>配置可攜程式環境</h1>
+<p><span>取得 Windows 10 64 位元環境下的可攜程式環境 (下載  2019_cdb_w5.7z), 下載後解開目錄, 放入 USB3.0 規格以上的隨身碟或隨身硬碟.</span><br/><br/><span>以滑鼠點擊 start.bat 開啟可攜隨身系統, 以 stop.bat 關閉可攜隨身系統, 隨身碟必須在關閉所有應用程式執行下, 才可正常退出.</span><br/><br/><span>了解基本的 DOS (Disk Operating System) 指令</span><br/><br/><span>C:\&gt; 符號為 DOS 命令列視窗的回應 (Prompt), 表示目前在 C 槽硬碟的 \ 根目錄, 若要切換到 Y 槽, 則在電腦的回應後, 輸入 Y:, 命令列將轉為</span><br/><br/><span>Y:\&gt;</span><br/><br/><span>若要更換目錄, 則使用 cd, 也就是 change directory 的意思, 例如:</span><br/><br/><span>Y:\&gt;cd tmp</span><br/><br/><span>表示要從 Y 槽的根目錄更換到 tmp 目錄, 也就是</span><br/><br/><span>Y:\tmp&gt;</span><br/><br/><span>若要再回到 Y 槽的根目錄, 可以使用 cd ..</span><br/><br/><span>表示要從目前所在目錄, 往上跳回一個目錄, 也就是重新回到 Y 槽的根目錄.</span><br/><br/><span>另外, 無論目前位於哪一個子目錄, 也可以使用 cd \</span><br/><br/><span>直接回到根目錄.</span><br/><br/><span>或者從 Y:\&gt; 直接使用</span><br/><br/><span>cd \tmp\repo\ssh\wcm2019</span><br/><br/><span>直接從 Y 槽的根目錄, 跳進 Y:\tmp\repo\ssh\wcm2019&gt;</span><br/><br/><span>此外, 常用的 DOS 指令有:</span><br/><br/><span>dir - 列出目前所在目錄的內容</span><br/><br/><span>mkdir - 隨後加上要建立目錄的名稱, 可以建立目錄</span><br/><br/><span>cls - clear screen, 清除目前的命令列顯示的內容</span></p>
+<h1>倉儲改版</h1>
+<p><span>建立Git倉儲，並克隆倉儲至近端工作後，對遠端倉儲改版</span><br/><br/><span><span>可攜程式系統中已經內建git，可以在啟動start.bat後，透過路徑的設定，直接執行git指令。</span></span><br/><br/><span><span>建立Git倉儲，共分為兩類，一類是直接在Github網際介面下建立倉儲時，要求建立README.md檔案，之後可以直接在近端，以git clone加上倉儲連線URL，將倉儲克隆一份到近端，並以最新版本作為工作目錄，使用者改版後，可以直接透過git add，commit與push對遠端倉儲改版。</span></span><br/><br/><span><span>另一類則是故意在Github網際介面下建立倉儲時，不要建立任何檔案，而是在近端自行利用git指令建立倉儲架構，新增內容後，以git remote add設法在近端倉儲中納入起源URL後，將近端倉儲版本新增提交推送到遠端。</span></span><br/><br/><span><span>git add</span></span></p>
+<p><img alt="" height="74" src="https://50733119.github.io/2019wcmj/images/cmd_fL1T2yK2BO.png" width="480"/></p>
+<p><span>git add可以用來新增一個檔案，數個檔案，或在之前提交後所新增的所有內容。</span><br/><br/><span><span>git add在GIT架構下，是對所新增或修改的內容拍快照：</span></span><br/><br/><span><span>git add。</span><span>將當前目錄和所有子目錄中的所有已修改和新（未跟踪）文件添加到暫存區域（也稱為索引），從而使它們準備好包含在下一個git提交中。</span><span>git add<span> </span></span></span><br/><br/><span><span>git commit<span> </span></span><span>將忽略與.gitignore文件中的模式匹配的任何文件</span></span><span> </span></p>
+<p><img alt="" height="67" src="https://50733119.github.io/2019wcmj/images/cmd_mkeF6CSYau.png" width="480"/></p>
+<p><span>git commit執行之前，必須使用git config建立臨時或永久的身分註記，因為GIT在展開所有改版內容時，必須明確登錄這些變更的作者與時間。</span><br/><br/><span><span>當使用者採用git commit -m“改版說明訊息”，此次提交到.git目錄下的更動內容，均會綁定使用者身分與改版所輸入的說明訊息。</span></span><br/><br/><span><span>git push<span> </span></span></span></p>
+<p><img alt="" height="145" src="https://50733119.github.io/2019wcmj/images/cmd_ypR5iFks9x.png" width="480"/></p>
+<p><span>git push在隨後沒有輸入遠端URL代號時，表示要推送到origin，若透過git remote add設定其他代號與URL對應時，git push加上代號，就可以將此次的提交內容，推送到指定的URL所在遠端倉儲。</span></p>
+<p><span><span><span>靜態CMSimfly</span></span></span></p>
+<p><span><span>利用CMSimfly（https://github.com/chiamingyen/cmsimfly）內容，建立自己的Github Pages網站</span></span></p>
+<p><span><span><span>設法利用<a href="http://mde.tw/wcm2019/content/%E5%AF%A6%E7%BF%92%E9%A0%85%E7%9B%AE%E4%B8%89.html">HTML5 CSS與Javascript</a>，納入與機械設計相關的靜態網頁內容</span><span> </span></span></span></p><h1>校園授權軟體</h1>
+<p>學校電算中心網站-下載專區</p>
+<p>網址:<a href="https://nfucc.nfu.edu.tw/zh/download">https://nfucc.nfu.edu.tw/zh/download</a> </p>
+<p>登入學生帳戶後即可到此網頁，可點選自己想要安裝的軟體</p>
+<p>但是<span color="#ff0000"><span>下載軟體限定校園IP</span></span></p>
+<p><img alt="" height="216" src="https://50733115.github.io/2019wcmj/images/%E6%A0%A1%E5%9C%92%E6%8E%88%E6%AC%8A%E7%B6%B2%E7%AB%991.png" width="400"/></p>
+<h1>WEEK15</h1>
+<p><img alt="" height="486" src="https://50733145.github.io/2019wcmj/images/chrome_bt5s8E9wwY.png" width="570"/><img alt="" height="145" src="https://50733145.github.io/2019wcmj/images/chrome_jl5PJwY9qc.png" width="500"/></p>
+<p>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</p>
+<p>1. 安裝最新版的 Virtualbox</p>
+<p>2. 建立 Ubuntu 18.04 虛擬主機</p>
+<p>3. 以網路卡橋接啟動 Ubuntu 伺服器</p>
+<p>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</p>
+<p>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</p>
+<p>6. 以 Windows 10 下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</p>
+<p>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</p>
+<p>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</p>
+<p>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</p>
+<p>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</p>
+<p>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</p>
+<p>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動</p>
+<p>先創建一個名字</p>
+<p><img alt="" height="402" src="https://50733145.github.io/2019wcmj/images/chrome_TYNGFEQaGO.png" width="357"/></p>
+<p>再拉到4096MB的大小</p>
+<p><img alt="" height="402" src="https://50733145.github.io/2019wcmj/images/chrome_MFf3QuH79N.png" width="354"/></p>
+<p>選擇中間並按create</p>
+<p><img alt="" height="407" src="https://50733145.github.io/2019wcmj/images/chrome_nkuaOHNoxo.png" width="358"/></p>
+<p>將10GB改為500GB再按Creat</p>
+<p><img alt="" height="449" src="https://50733145.github.io/2019wcmj/images/chrome_L1ngUnG2wH.png" width="442"/></p>
+<p>選取第三個</p>
+<p><img alt="" height="154" src="https://50733145.github.io/2019wcmj/images/VirtualBox_PNZ4K9RrHu.png" width="232"/></p>
+<p>創建好後按啟動，選擇已下載好的檔案並創建</p>
+<p><img alt="" height="346" src="https://50733145.github.io/2019wcmj/images/chrome_yQSbT5hwPp.png" width="612"/></p>
+<p><span>打ifconfig查詢IP位置</span></p>
+<p><img alt="" height="218" src="https://50733145.github.io/2019wcmj/images/chrome_BodRyb6U6U.png" width="506"/></p>
+<p><span>再將編輯好的 nginx 設定檔案送到 Ubuntu</span></p>
+<p><img alt="" height="478" src="https://50733145.github.io/2019wcmj/images/chrome_JS6bRcrMlk.png" width="600"/></p><h1>ROC Flag</h1>
 <!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -299,6 +435,7 @@ All rights reserved | This template is made with <i aria-hidden="true" class="ic
 </div>
 </div>
 <!-- for footer -->
+<h1>期末報告影片</h1>
 <p></p>
 <!-- for site wrap -->
 <p></p>
@@ -328,4 +465,4 @@ All rights reserved | This template is made with <i aria-hidden="true" class="ic
                     </script>
             -->
 <script src="/static/chimper/js/main.js"></script>
-<p>F</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/ZvcOOy3h7dw" width="560"></iframe></p></div></div>
